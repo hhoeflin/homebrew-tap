@@ -12,6 +12,8 @@ class Blesh < Formula
   version "0.4.0-devel3"
 
   depends_on "gawk" => :build
+  depends_on "fzf" 
+  depends_on "bash-preexec" 
 
   def install
     system "make", "install" # if this fails, try separate make/make install steps
