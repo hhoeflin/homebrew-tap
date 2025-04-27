@@ -59,6 +59,7 @@ class GobjectIntrospection < Formula
     venv = virtualenv_create(libexec, "python3.13")
     venv.pip_install resources
     ENV.prepend_path "PATH", venv.root/"bin"
+    ENV.append "LDFLAGS", "-lm" if OS.linux?
 
     ENV["GI_SCANNER_DISABLE_CACHE"] = "true"
     if OS.mac? && MacOS.version == :ventura && DevelopmentTools.clang_build_version == 1500
