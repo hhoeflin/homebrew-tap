@@ -1,0 +1,14 @@
+:100644 100644 0000000 4436c99 M	Formula/glib.rb
+
+diff --git b/Formula/glib.rb a/Formula/glib.rb
+index 25c982d..4436c99 100644
+--- b/Formula/glib.rb
++++ a/Formula/glib.rb
+@@ -81,6 +81,7 @@ class Glib < Formula
+       -Ddtrace=false
+       -Druntime_dir=#{var}/run
+       -Dtests=false
++      -Dc_link_args=-lm
+     ]
+ 
+     # Stage build in order to deal with circular dependency as `gobject-introspection`
