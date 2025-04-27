@@ -32,6 +32,7 @@ class Cups < Formula
   uses_from_macos "zlib"
 
   def install
+    ENV.append "LDFLAGS", "-lm" if OS.linux?
     system "./configure", "--with-components=core",
                           "--with-tls=openssl",
                           "--without-bundledir",

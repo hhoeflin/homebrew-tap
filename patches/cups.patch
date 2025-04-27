@@ -1,0 +1,14 @@
+:100644 100644 8f85941 0000000 M	Formula/cups.rb
+
+diff --git a/Formula/cups.rb b/Formula/cups.rb
+index 8f85941..cc255d2 100644
+--- a/Formula/cups.rb
++++ b/Formula/cups.rb
+@@ -32,6 +32,7 @@ class Cups < Formula
+   uses_from_macos "zlib"
+ 
+   def install
++    ENV.append "LDFLAGS", "-lm" if OS.linux?
+     system "./configure", "--with-components=core",
+                           "--with-tls=openssl",
+                           "--without-bundledir",
