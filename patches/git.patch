@@ -1,0 +1,15 @@
+:100644 100644 0000000 8564126 M	Formula/git.rb
+
+diff --git b/Formula/git.rb a/Formula/git.rb
+index a58a53e..8564126 100644
+--- b/Formula/git.rb
++++ a/Formula/git.rb
+@@ -91,7 +91,7 @@ class Git < Formula
+       sysconfdir=#{etc}
+       CC=#{ENV.cc}
+       CFLAGS=#{ENV.cflags}
+-      LDFLAGS=#{ENV.ldflags}
++      LDFLAGS=-lresolv
+       NO_TCLTK=1
+     ]
+ 

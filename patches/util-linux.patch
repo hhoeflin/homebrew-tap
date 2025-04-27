@@ -1,0 +1,15 @@
+:100644 100644 0000000 d3a443e M    Formula/util-linux.rb
+
+diff --git b/Formula/util-linux.rb a/Formula/util-linux.rb
+index 2da7aa2..d3a443e 100644
+--- b/Formula/util-linux.rb
++++ a/Formula/util-linux.rb
+@@ -90,7 +89,7 @@ class UtilLinux < Formula
+     end
+
+     system "./configure", *args, *std_configure_args
+-    system "make", "install"
++    system "make", "install", "LDFLAGS=\"-lm\""
+   end
+
+   def caveats

@@ -1,0 +1,16 @@
+:100644 100644 0000000 6863b3b M	Formula/elfutils.rb
+
+diff --git b/Formula/elfutils.rb a/Formula/elfutils.rb
+index e6cd7fb..6863b3b 100644
+--- b/Formula/elfutils.rb
++++ a/Formula/elfutils.rb
+@@ -33,7 +33,8 @@ class Elfutils < Formula
+            "--with-bzlib",
+            "--with-lzma",
+            "--with-zlib",
+-           "--with-zstd"
++           "--with-zstd",
++           "--disable-demangler"
+     system "make"
+     system "make", "install"
+   end
