@@ -71,6 +71,7 @@ class Glib < Formula
     # build patch for `ld: missing LC_LOAD_DYLIB (must link with at least libSystem.dylib) \
     # in ../gobject-introspection-1.80.1/build/tests/offsets/liboffsets-1.0.1.dylib`
     ENV.append "LDFLAGS", "-Wl,-ld_classic" if OS.mac? && MacOS.version == :ventura
+    ENV.append "LDFLAGS", "-lm" if OS.linux?
 
     # Disable dtrace; see https://trac.macports.org/ticket/30413
     # and https://gitlab.gnome.org/GNOME/glib/-/issues/653
