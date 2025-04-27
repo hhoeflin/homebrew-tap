@@ -81,7 +81,6 @@ class Glib < Formula
       -Ddtrace=false
       -Druntime_dir=#{var}/run
       -Dtests=false
-      -Dc_link_args=-lm
     ]
 
     # Stage build in order to deal with circular dependency as `gobject-introspection`
