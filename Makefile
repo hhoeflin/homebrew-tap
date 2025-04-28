@@ -8,6 +8,7 @@ download-formulas:
 	wget https://raw.githubusercontent.com/Homebrew/homebrew-core/refs/heads/master/Formula/u/util-linux.rb -O Formula/util-linux.rb
 	wget https://raw.githubusercontent.com/Homebrew/homebrew-core/refs/heads/master/Formula/g/glib.rb -O Formula/glib.rb
 	wget https://raw.githubusercontent.com/Homebrew/homebrew-core/refs/heads/master/Formula/g/gobject-introspection.rb -O Formula/gobject-introspection.rb
+	wget https://raw.githubusercontent.com/Homebrew/homebrew-core/refs/heads/master/Formula/c/cups.rb -O Formula/cups.rb
 
 do-patch:
 	patch -p1 < patches/git.patch
@@ -15,3 +16,4 @@ do-patch:
 	patch -p1 < patches/util-linux.patch
 	patch -p1 < patches/glib.patch
 	patch -p1 < patches/gobject-introspection.patch
+	patch -p1 < patches/cups.patch
