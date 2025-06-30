@@ -5,7 +5,7 @@ class Nextflow < Formula
   sha256 "44cc7826b9f2bd41047104d8583420b5d946a7cc2c6721e38145a8f2f97f53e0"  # Replace with correct sha256 for the tarball
 
   # Define dependencies
-  depends_on "openjdk"
+  depends_on "openjdk@21"
   depends_on "lua"
 
   def install
