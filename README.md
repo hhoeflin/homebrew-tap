@@ -19,6 +19,7 @@ brew "<formula>"
 
 ## Formulae
 
+- `apm` — manage AI coding agent profiles across OpenCode, Claude, Cursor, and Copilot (https://github.com/hhoeflin/agent_profile_manager)
 - `grepai` — privacy-first semantic code search CLI (https://github.com/yoanbernabeu/grepai)
 
 ## Updating formulae
