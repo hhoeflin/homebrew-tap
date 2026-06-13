@@ -16,3 +16,7 @@ brew "<formula>"
 ## Documentation
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+
+## Formulae
+
+- `grepai` — privacy-first semantic code search CLI (https://github.com/yoanbernabeu/grepai)
