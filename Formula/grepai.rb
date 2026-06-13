@@ -18,7 +18,7 @@ class Grepai < Formula
     system "go", "build", *std_go_args(
       output:  bin/"grepai",
       ldflags: ["-s", "-w", "-X", "main.version=#{version}"],
-    )
+    ), "./cmd/grepai"
   end
 
   def caveats
